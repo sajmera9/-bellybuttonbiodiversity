@@ -11,7 +11,7 @@
 // Display the Default Bar Chart and Bubble Plot
 // Display default metadata
 function init(){
-  d3.json("/samples.json").then(function(data) {
+  d3.json("././samples.json").then(function(data) {
     //Fill values into the dropdown menu
     console.log(data);
     var dropdown_values = d3.select("#selDataset");
