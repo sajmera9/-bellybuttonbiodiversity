@@ -1,13 +1,3 @@
-//Fill values into the dropdown menu
-
-// d3.json("/samples.json").then(function(data) {
-//   var dropdown_values = d3.select("#selDataset");
-//   var data_names = data.names;
-//   data_names.forEach(function(name){
-//     dropdown_values.append("option").text(name)
-//   })
-// });
-
 // Display the Default Bar Chart and Bubble Plot
 // Display default metadata
 function init(){
@@ -93,7 +83,7 @@ function init(){
 
 //Create function to show updated graphs
 function updatePage() {
-  d3.json("/samples.json").then(function(data){
+  d3.json("././samples.json").then(function(data){
     d3.select("#sample-metadata").selectAll("div").text("");
     
     var sample_values = data.samples;
